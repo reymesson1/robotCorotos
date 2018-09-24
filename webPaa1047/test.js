@@ -55,21 +55,32 @@ driver.wait(webdriver.until.elementLocated(webdriver.By.id('otp-verification-cod
     }, 41000);
     setTimeout(async() => {      
       console.log('esperar5....')
-      //el = driver.find_element_by_id('categories')
-      // el = driver.findElement(By.id("category_0"))
-      // for (option in el.findElement(By.tagName("option")) ){
-      //   console.log(option)
-      //   if (option.get_attribute("value") == "1"){
-
-      //     return option.click()
-      //   }
-      // }
-      return driver.findElement(By.id("category_0")).sendKeys("Inmuebles en venta");
+      return driver.findElement(By.id("category_0")).click();
     }, 41000);
     setTimeout(async() => {      
       console.log('esperar5....')
-      return driver.findElement(By.id("category_1")).sendKeys("Apartamentos");
-    }, 42000);
+      return driver.findElement(By.id("category_0")).sendKeys("i");
+    }, 41000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("category_0")).sendKeys("i");
+    }, 42000);  
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.tagName("body")).click();
+    }, 43000);  
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("category_1")).click();
+    }, 45000);  
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("category_1")).sendKeys("a");
+    }, 45000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.tagName("body")).click();
+    }, 45000);    
     setTimeout(async() => {      
       console.log('esperar5....')
       return driver.findElement(By.xpath("//button[@type='submit']")).click();
@@ -77,44 +88,91 @@ driver.wait(webdriver.until.elementLocated(webdriver.By.id('otp-verification-cod
     setTimeout(async() => {      
       console.log('esperar5....')
       return driver.findElement(By.id("metadata.rooms")).sendKeys("4");
-    }, 50000);
+    }, 47000);
     setTimeout(async() => {      
       console.log('esperar5....')
       return driver.findElement(By.id("metadata.bathrooms")).sendKeys("4");
-    }, 51000);
+    }, 47000);
     setTimeout(async() => {      
       console.log('esperar5....')
       return driver.findElement(By.id("metadata.constructionArea")).sendKeys("110");
-    }, 51000);
+    }, 47000);
     setTimeout(async() => {      
       console.log('esperar5....')
-      return driver.findElement(By.id("metadata.buildingCondition")).sendKeys("Nuevo");
-    }, 52000);
+      return driver.findElement(By.id("metadata.buildingCondition")).click();
+    }, 47000);
     setTimeout(async() => {      
       console.log('esperar5....')
-      return driver.findElement(By.id("metadata.furnishedType")).sendKeys("Sin amueblar");
-    }, 53000);
+      return driver.findElement(By.id("metadata.buildingCondition")).sendKeys("n");
+    }, 48000);
     setTimeout(async() => {      
       console.log('esperar5....')
-      return driver.findElement(By.id("metadata.furnishedType")).sendKeys("Sin amueblar");
-    }, 53000);
+      return driver.findElement(By.id("metadata.furnishedType")).click();
+    }, 49000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("metadata.furnishedType")).sendKeys("s");
+    }, 49000);
     setTimeout(async() => {      
       console.log('esperar5....')
       return driver.findElement(By.xpath("//button[@type='submit']")).click();
+    }, 50000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("price")).sendKeys(210000);
+    }, 51000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("region_0")).sendKeys("s");
+    }, 52000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("region_0")).sendKeys("s");
+    }, 52000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("region_0")).sendKeys("s");
+    }, 53000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("region_0")).sendKeys("s");
+    }, 54000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("region_0")).sendKeys("s");
     }, 55000);
     setTimeout(async() => {      
       console.log('esperar5....')
-      return driver.findElement(By.id("price")).sendKeys("30000.00");
-    }, 570000);
+      return driver.findElement(By.id("region_0")).sendKeys("s");
+    }, 56000);
     setTimeout(async() => {      
       console.log('esperar5....')
-      return driver.findElement(By.id("region_0")).sendKeys("Santo Domingo");
-    }, 570000);
+      return driver.findElement(By.id("region_0")).sendKeys("s");
+    }, 57000);
     setTimeout(async() => {      
       console.log('esperar5....')
-      return driver.findElement(By.id("region_1")).sendKeys("Santo Domingo Este");
-    }, 570000);
-    
+      return driver.findElement(By.id("region_0")).sendKeys("s");
+    }, 58000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("region_0")).sendKeys("s");
+    }, 59000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.tagName("body")).click();
+    }, 60000);    
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("region_1")).click();
+    }, 60000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.id("region_1")).sendKeys("s");
+    }, 61000);
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      return driver.findElement(By.tagName("body")).click();
+    }, 61000);        
 
 }).catch(()=>{
     console.log('Element not found');
