@@ -67,12 +67,8 @@ mailListener.on("attachment", function(attachment, email){
   console.log(attachment.path);
 }); 
 
-mongoose.connect('mongodb://localhost:27017/meanstack',(err)=>{
+mongoose.connect('mongodb://localhost:27017/project2',(err)=>{
   if(!err){
       console.log('Connected to mongo Database');
   }
 })
-
-app.listen(4201, function(){
-  console.log("Listening from 4201...");
-});

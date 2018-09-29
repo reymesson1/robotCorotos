@@ -1,0 +1,9 @@
+<button mat-button [matMenuTriggerFor]="menu" >          
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/account" ><mat-icon>work</mat-icon>{{navbarData.account}}</button>    
+    <button mat-menu-item routerLink="/register" *ngIf="!data.isAuthenticated"><mat-icon>person_add</mat-icon>{{navbarData.registration}}</button>
+    <button mat-menu-item routerLink="/login" *ngIf="!data.isAuthenticated" ><mat-icon>person</mat-icon>{{navbarData.login}}</button>
+    <button mat-menu-item (click)="logoff()"><mat-icon>input</mat-icon>{{navbarData.logout}}</button>
+  </mat-menu> 

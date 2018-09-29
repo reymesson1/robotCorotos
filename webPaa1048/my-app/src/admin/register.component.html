@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <mat-card>
+      <h1>Sign Up</h1>
+      <mat-form-field class="example-full-width">
+        <p>Username</p>
+        <input matInput value="Sushi" [(ngModel)]="userData.username" name="username">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <p>FullName</p>
+        <input matInput value="Sushi" [(ngModel)]="userData.fullname" name="fullname">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <p>Password</p>
+        <input matInput type="password" value="Sushi" [(ngModel)]="userData.password" name="password">
+      </mat-form-field>
+      <mat-form-field class="example-full-width" >        
+        <mat-select placeholder="Language" [(ngModel)]="userData.language" name="language" >
+            <mat-option value="Spanish">Spanish</mat-option>          
+            <mat-option value="English">English</mat-option>            
+        </mat-select>        
+      </mat-form-field>
+      <br/>
+      <a color="primary" mdbWavesEffect routerLink="/login" >Back</a>&nbsp;      
+      <button mat-stroked-button mat-button (click)="Post()" class="pull-right" >Save</button>  
+      <br/>
+    </mat-card>
+  </div>
+  <div class="col-md-3"></div>
+</div>    

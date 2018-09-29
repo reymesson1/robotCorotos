@@ -1,0 +1,71 @@
+<mat-card>
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="{{navbarData.fieldsearch}}" (keyup)="applyFilter($event.target.value)" >
+        </mat-form-field>
+        <button mat-icon-button color="primary" >
+          <mat-icon aria-label="Example icon-button with a heart icon">search</mat-icon>
+        </button>
+      </form>
+</mat-card>
+<br/>
+<mat-card>
+  <div class="pull-right">
+    <button mat-button color="primary" mat-stroked-button (click)="openDialog()">{{navbarData.addfield}}</button>
+  </div>
+  <br/>
+</mat-card>
+<br/>
+<mat-card>
+
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+  
+  <!--- Note that these columns can be defined in any order.
+    The actual rendered columns are set as a property on the row definition" -->
+    
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> No. </th>
+      <td mat-cell *matCellDef="let element"> {{element._id}} </td>
+    </ng-container>
+    
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{navbarData.tablefielddescription}} </th>
+      <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+    </ng-container>
+    
+    <!-- Weight Column -->
+    <ng-container matColumnDef="weight">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{navbarData.tablefieldvalue}} </th>
+      <td mat-cell *matCellDef="let element"> {{element.value}} </td>
+    </ng-container>
+    
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="symbol">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{navbarData.tablefieldcategory}} </th>
+      <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="field">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{navbarData.tablefieldfield}} </th>
+      <td mat-cell *matCellDef="let element"> {{element.field}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> {{navbarData.tablefieldactions}} </th>
+      <td mat-cell *matCellDef="let element">
+         <mat-icon (click)="Edit(element._id)">edit</mat-icon>&nbsp;&nbsp;
+         <mat-icon (click)="Delete(element._id)">delete</mat-icon> 
+        </td>
+    </ng-container>
+    
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+  </table>
+  <mat-paginator [length]="100"
+    [pageSize]="10"
+    [pageSizeOptions]="[5, 10, 25, 100]">
+  </mat-paginator>
+</mat-card>

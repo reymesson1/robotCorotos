@@ -4,12 +4,29 @@ var express = require('express');
 var app = express();
 
 var Post = require('./models/post.js');
+var Master = require('./models/master.js');
+
+var CronJob = require('cron').CronJob;
+new CronJob('0 */2 * * * *', function() {
+  console.log('You will see this message every second');
+
+  setTimeout(async() => {
+
+    var master = await Master.findOne({"status":true})
+    console.log(master)      
+    dataMaster["title"] = master.title
+    dataMaster["description"] = master.description
+
+    
+  }, 2000);
 
 var By = webdriver.By;
 
 var driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.chrome()).build();
 
 var promise = require('selenium-webdriver').promise;
+
+var dataMaster = {}
 
 driver.get('https://www.corotos.com.do/create');
 
@@ -35,6 +52,7 @@ driver.wait(webdriver.until.elementLocated(webdriver.By.id('otp-verification-cod
       var posts = Post.remove({},function(err){
         if(!err){console.log('removed!')}
       })
+
       return driver.get('https://www.corotos.com.do/create')      
     }, 25000);
     setTimeout(async() => {      
@@ -47,11 +65,11 @@ driver.wait(webdriver.until.elementLocated(webdriver.By.id('otp-verification-cod
     }, 35000);
     setTimeout(async() => {      
       console.log('esperar5....')
-      return driver.findElement(By.id("title")).sendKeys("test");
+      return driver.findElement(By.id("title")).sendKeys(dataMaster.title);
     }, 40000);
     setTimeout(async() => {      
       console.log('esperar5....')
-      return driver.findElement(By.id("description")).sendKeys("test2");
+      return driver.findElement(By.id("description")).sendKeys(dataMaster.description);
     }, 41000);
     setTimeout(async() => {      
       console.log('esperar5....')
@@ -173,13 +191,20 @@ driver.wait(webdriver.until.elementLocated(webdriver.By.id('otp-verification-cod
       console.log('esperar5....')
       return driver.findElement(By.tagName("body")).click();
     }, 61000);        
+    setTimeout(async() => {      
+      console.log('esperar5....')
+      driver.close()
+    }, 62000);        
 
 }).catch(()=>{
     console.log('Element not found');
+    driver.close();
 })
 
+}, null, true, 'America/Los_Angeles');
 
-mongoose.connect('mongodb://localhost:27017/meanstack',(err)=>{
+
+mongoose.connect('mongodb://localhost:27017/project2',(err)=>{
   if(!err){
       console.log('Connected to mongo Database');
   }

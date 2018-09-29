@@ -1,0 +1,12 @@
+<navbar *ngIf="data.isAuthenticated" ></navbar>
+<div class="row" *ngIf="!data.isAuthenticated">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</div>  
+  <div class="row">
+    <mat-card>  
+      <router-outlet></router-outlet>
+    </mat-card>
+  </div>

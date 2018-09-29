@@ -1,0 +1,51 @@
+{"_id":{"$oid":"5b992a41379e19169c59f01f"},"description":"Main Master EN","value":"Master","category":"English","field":"master","__v":0}
+{"_id":{"$oid":"5b992a58379e19169c59f020"},"description":"Main Master ES","value":"Principal","category":"Spanish","field":"master","__v":0}
+{"_id":{"$oid":"5b992adc379e19169c59f021"},"description":"Main Detail EN","value":"Detail","category":"English","field":"detail","__v":0}
+{"_id":{"$oid":"5b992b4e379e19169c59f022"},"description":"Configuration field Menu EN","value":"Configuration","category":"English","field":"configuration","__v":0}
+{"_id":{"$oid":"5b992b69379e19169c59f023"},"description":"Configuracion Menu ES","value":"Configuracion","category":"Spanish","field":"configuration","__v":0}
+{"_id":{"$oid":"5b992c0a379e19169c59f024"},"description":"\u0009Configuration field Menu ES","value":"Detalle","category":"Spanish","field":"detail","__v":0}
+{"_id":{"$oid":"5b992c83379e19169c59f025"},"description":"Profile Menu EN","value":"Profile","category":"English","field":"profile","__v":0}
+{"_id":{"$oid":"5b992cb5379e19169c59f026"},"description":"Perfil de usuario detalles del usuario","value":"Perfil de Usuario","category":"Spanish","field":"profile","__v":0}
+{"_id":{"$oid":"5b992d1b379e19169c59f027"},"description":"Field Menu EN ","value":"Fields","category":"English","field":"field","__v":0}
+{"_id":{"$oid":"5b992d34379e19169c59f028"},"description":"Campos Disponibles","value":"Campos","category":"Spanish","field":"field","__v":0}
+{"_id":{"$oid":"5b99578702bbd6187406df5f"},"description":"User Account Field","value":"Account","category":"English","field":"account","__v":0}
+{"_id":{"$oid":"5b9957a902bbd6187406df60"},"description":"User Account Menu ES","value":"Cuenta de Usuario","category":"Spanish","field":"account","__v":0}
+{"_id":{"$oid":"5b9a79ecd95a9f0b381deef2"},"description":"Registration Sign up user","value":"Sign Up","category":"English","field":"registration","__v":0}
+{"_id":{"$oid":"5b9a7a18d95a9f0b381deef3"},"description":"Sign up Menu ES","value":"Registrarse","category":"Spanish","field":"registration","__v":0}
+{"_id":{"$oid":"5b9fb68e59b3051478687b65"},"description":"Log out","value":"Sign Out","category":"English","field":"logout","__v":0}
+{"_id":{"$oid":"5b9fb6b059b3051478687b66"},"description":"Log out Menu ES","value":"Salir","category":"Spanish","field":"logout","__v":0}
+{"_id":{"$oid":"5b9fcee441e8ce17e8562851"},"description":"Login","value":"Sign In","category":"English","field":"login","__v":0}
+{"_id":{"$oid":"5b9ffe698fe97c1ed09c97f9"},"description":"Login Menu-ES","value":"Inicio Sesion","category":"Spanish","field":"login","__v":0}
+{"_id":{"$oid":"5ba15a00b8b8f919d035c5b7"},"description":"Flexfield","value":"Item1","category":"English","field":"flexfield1","__v":0}
+{"_id":{"$oid":"5ba15d58b8b8f919d035c5b8"},"description":"Flexfield","value":"Flexfield","category":"Spanish","field":"flexfield1","__v":0}
+{"_id":{"$oid":"5ba15dafbf6364068c8f7d24"},"description":"Flexfield2","value":"Flexfield2","category":"English","field":"flexfield2","__v":0}
+{"_id":{"$oid":"5ba2798c99f85610acc4e6ae"},"description":"Add Field Button","value":"Add Field","category":"English","field":"addfield","__v":0}
+{"_id":{"$oid":"5ba279aa99f85610acc4e6af"},"description":"Agregar Boton Campo","value":"Agregar Campo","category":"Spanish","field":"addfield","__v":0}
+{"_id":{"$oid":"5ba293d299f85610acc4e6b0"},"description":"Table Field Column","value":"Description","category":"English","field":"tablefielddescription","__v":0}
+{"_id":{"$oid":"5ba293eb99f85610acc4e6b1"},"description":"Descripcion de la tabla","value":"Descripcion","category":"Spanish","field":"tablefielddescription","__v":0}
+{"_id":{"$oid":"5ba2944399f85610acc4e6b2"},"description":"Value Table Field","value":"Value","category":"English","field":"tablefieldvalue","__v":0}
+{"_id":{"$oid":"5ba2945999f85610acc4e6b3"},"description":"Tabla columna valor","value":"Valor","category":"Spanish","field":"tablefieldvalue","__v":0}
+{"_id":{"$oid":"5ba2960499f85610acc4e6b4"},"description":"Category","value":"Category","category":"English","field":"tablefieldcategory","__v":0}
+{"_id":{"$oid":"5ba2962299f85610acc4e6b5"},"description":"Columna Tabla Categoria","value":"Categoria","category":"Spanish","field":"tablefieldcategory","__v":0}
+{"_id":{"$oid":"5ba2964e99f85610acc4e6b6"},"description":"Table Field","value":"Field","category":"English","field":"tablefieldfield","__v":0}
+{"_id":{"$oid":"5ba2966399f85610acc4e6b7"},"description":"Columna Campo Tabla Field","value":"Campo","category":"Spanish","field":"tablefieldfield","__v":0}
+{"_id":{"$oid":"5ba2971b99f85610acc4e6b8"},"description":"Add Field Modal","value":"Add Field","category":"English","field":"fieldmodaladdfield","__v":0}
+{"_id":{"$oid":"5ba29d0f99f85610acc4e6ba"},"description":"Add Field ES","value":"Agregar Campo","category":"Spanish","field":"fieldmodaladdfield","__v":0}
+{"_id":{"$oid":"5ba29e1d99f85610acc4e6bb"},"description":"Column Actions","value":"Actions","category":"English","field":"tablefieldactions","__v":0}
+{"_id":{"$oid":"5ba29e3f99f85610acc4e6bc"},"description":"Actions Table Column ES","value":"Acciones","category":"Spanish","field":"tablefieldactions","__v":0}
+{"_id":{"$oid":"5ba3bea6dbb0e4153859ea64"},"description":"Add Field","value":"Add Field","category":"English","field":"fieldmodallabeladdfield","__v":0}
+{"_id":{"$oid":"5ba3bec9dbb0e4153859ea65"},"description":"Agregar Campo","value":"Agregar Campo","category":"Spanish","field":"fieldmodallabeladdfield","__v":0}
+{"_id":{"$oid":"5ba3bf7cdbb0e4153859ea66"},"description":"Description modal","value":"Description","category":"English","field":"fieldmodallabeldescription","__v":0}
+{"_id":{"$oid":"5ba3bf8fdbb0e4153859ea68"},"description":"description","value":"Descripcion","category":"Spanish","field":"fieldmodallabeldescription","__v":0}
+{"_id":{"$oid":"5ba3cb52dbb0e4153859ea69"},"description":"Value label modal field","value":"Value","category":"English","field":"fieldmodallabelvalue","__v":0}
+{"_id":{"$oid":"5ba3cb5bdbb0e4153859ea6a"},"description":"Valor","value":"Valor","category":"Spanish","field":"fieldmodallabelvalue","__v":0}
+{"_id":{"$oid":"5ba3cb70dbb0e4153859ea6b"},"description":"Category","value":"Category","category":"English","field":"fieldmodallabelcategory","__v":0}
+{"_id":{"$oid":"5ba3cb84dbb0e4153859ea6c"},"description":"Categoria","value":"Categoria","category":"Spanish","field":"fieldmodallabelcategory","__v":0}
+{"_id":{"$oid":"5ba3cb95dbb0e4153859ea6d"},"description":"Field ","value":"Field","category":"English","field":"fieldmodallabelfield","__v":0}
+{"_id":{"$oid":"5ba3cb9fdbb0e4153859ea6e"},"description":"Campo","value":"Campo","category":"Spanish","field":"fieldmodallabelfield","__v":0}
+{"_id":{"$oid":"5ba3cc74dbb0e4153859ea6f"},"description":"Monitor handling error log","value":"Monitor","category":"English","field":"navbarmenumonitor","__v":0}
+{"_id":{"$oid":"5ba3ccafdbb0e4153859ea70"},"description":"Monitor handling error","value":"Monitor","category":"Spanish","field":"navbarmenumonitor","__v":0}
+{"_id":{"$oid":"5ba40c26dbb0e4153859ea73"},"description":"Search ","value":"Search Field","category":"English","field":"fieldsearch","__v":0}
+{"_id":{"$oid":"5ba40c35dbb0e4153859ea74"},"description":"Busqueda","value":"Busqueda","category":"Spanish","field":"fieldsearch","__v":0}
+{"_id":{"$oid":"5ba4fa99d5c2b810f074f9d8"},"description":"Search Field Master","value":"Search Field","category":"English","field":"mastersearch","__v":0}
+{"_id":{"$oid":"5ba4fab7d5c2b810f074f9d9"},"description":"Master Search Field ES","value":"Busqueda ","category":"Spanish","field":"mastersearch","__v":0}

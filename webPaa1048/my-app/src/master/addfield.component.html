@@ -1,0 +1,72 @@
+<h1 mat-dialog-title>{{navbarData.fieldmodallabeladdfield}}</h1>
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+    <ng-template matStepLabel>Fill out your name</ng-template>
+    <mat-form-field class="example-full-width">
+            <input matInput placeholder="Full Name" [(ngModel)]="fieldData.fullname" name="fullname" >
+    </mat-form-field>
+    <br/>    
+       <input type="file"       
+       id="uploadPicture"
+       class="hidden-input"
+       accept="image/jpeg, .jpeg, image/png, .png, image/pjpeg, .jpg"
+       (change)="onSelectFile($event)"
+       multiple="multiple"
+       >
+    <br/>
+    <br/>
+    <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+    </div>
+</mat-step>
+<mat-step [stepControl]="secondFormGroup">
+    
+      <ng-template matStepLabel>Fill out your address</ng-template>        
+        <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Title" [(ngModel)]="fieldData.title" name="title" ></textarea>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Description" [(ngModel)]="fieldData.description" name="description"></textarea>
+        </mat-form-field>
+        <mat-form-field class="example-full-width" value="Category">        
+            <mat-select [(ngModel)]="fieldData.category" value="Category" name="category">
+              <mat-option value="Spanish">Spanish</mat-option>          
+              <mat-option value="English">English</mat-option>          
+            </mat-select>
+        </mat-form-field>        
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    
+  </mat-step>
+  <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Quantity" [(ngModel)]="fieldData.quantity" name="quantity" ></textarea>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Location" [(ngModel)]="fieldData.location" name="location" ></textarea>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Place" [(ngModel)]="fieldData.place" name="place" ></textarea>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">        
+          <mat-select [(ngModel)]="fieldData.category" name="category">
+            <mat-option value="Spanish">Spanish</mat-option>          
+            <mat-option value="English">English</mat-option>          
+          </mat-select>
+      </mat-form-field>        
+      <mat-form-field class="example-full-width">        
+          <mat-select [(ngModel)]="fieldData.category" name="category">
+            <mat-option value="Spanish">Spanish</mat-option>          
+            <mat-option value="English">English</mat-option>          
+          </mat-select>
+      </mat-form-field>        
+      <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button [mat-dialog-close]="fieldData.description" (click)="stepper.reset();onClick()">Save</button>
+      </div>    
+  </mat-step>
+</mat-horizontal-stepper>    
