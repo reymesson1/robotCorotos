@@ -231,7 +231,7 @@ app.post('/register', function(req,res){
     }
   })
 })
-mongoose.connect('mongodb://localhost:27017/project2',(err)=>{
+mongoose.connect('mongodb://localhost:27017/project3',(err)=>{
   if(!err){
       console.log('Connected to mongo Database');
   }

@@ -6,8 +6,8 @@ var app = express();
 var Post = require('./models/post.js');
 
 var mailListener = new MailListener({
-  username: "reymesson",
-  password: "@ltagracia113",
+  username: "dulceamorpina28",
+  password: "@ltagracia114",
   host: "imap.gmail.com",
   port: 993, // imap port
   tls: true,
@@ -67,7 +67,7 @@ mailListener.on("attachment", function(attachment, email){
   console.log(attachment.path);
 }); 
 
-mongoose.connect('mongodb://localhost:27017/project2',(err)=>{
+mongoose.connect('mongodb://localhost:27017/project3',(err)=>{
   if(!err){
       console.log('Connected to mongo Database');
   }

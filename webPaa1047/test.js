@@ -7,7 +7,7 @@ var Post = require('./models/post.js');
 var Master = require('./models/master.js');
 
 var CronJob = require('cron').CronJob;
-new CronJob('0 */2 * * * *', function() {
+new CronJob('0 47 * * * *', function() {
   console.log('You will see this message every second');
 
   setTimeout(async() => {
@@ -30,7 +30,7 @@ var dataMaster = {}
 
 driver.get('https://www.corotos.com.do/create');
 
-driver.findElement(By.id('pid_email')).sendKeys('reymesson@gmail.com')
+driver.findElement(By.id('pid_email')).sendKeys('dulceamorpina28@gmail.com')
 driver.findElement(By.className('_2QhqT _3NHOV _3z-oQ _2El2O _7xPBo _2pXQq _3WoTQ gO5qu _2h31L _1Dh7N')).click()
 
 driver.wait(webdriver.until.elementLocated(webdriver.By.id('otp-verification-code')),20000)
@@ -57,7 +57,7 @@ driver.wait(webdriver.until.elementLocated(webdriver.By.id('otp-verification-cod
     }, 25000);
     setTimeout(async() => {      
       console.log('esperar4....')
-      return driver.findElement(By.xpath("//input[@type='file']")).sendKeys("c:/Users/Rey Messon/Desktop/img(97).jpg");
+      return driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:/Users/PB_JARLIN/Desktop/proyecto.jpeg");
     }, 30000);
     setTimeout(async() => {      
       console.log('esperar5....')
@@ -137,7 +137,7 @@ driver.wait(webdriver.until.elementLocated(webdriver.By.id('otp-verification-cod
     }, 50000);
     setTimeout(async() => {      
       console.log('esperar5....')
-      return driver.findElement(By.id("price")).sendKeys(210000);
+      return driver.findElement(By.id("price")).sendKeys(190000);
     }, 51000);
     setTimeout(async() => {      
       console.log('esperar5....')
@@ -193,8 +193,8 @@ driver.wait(webdriver.until.elementLocated(webdriver.By.id('otp-verification-cod
     }, 61000);        
     setTimeout(async() => {      
       console.log('esperar5....')
-      driver.close()
-    }, 62000);        
+      return driver.findElement(By.xpath("//button[@type='submit']")).click();
+    }, 65000);        
 
 }).catch(()=>{
     console.log('Element not found');
@@ -204,7 +204,7 @@ driver.wait(webdriver.until.elementLocated(webdriver.By.id('otp-verification-cod
 }, null, true, 'America/Los_Angeles');
 
 
-mongoose.connect('mongodb://localhost:27017/project2',(err)=>{
+mongoose.connect('mongodb://localhost:27017/project3',(err)=>{
   if(!err){
       console.log('Connected to mongo Database');
   }
